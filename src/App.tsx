@@ -1,11 +1,11 @@
 import './App.css'
-import Playground from './components/Playground'
+import { Overview } from './components/Overview'
 
 function App() {
 
   return (
     <>
-      <Playground />
+      <Overview />
     </>
   )
 }

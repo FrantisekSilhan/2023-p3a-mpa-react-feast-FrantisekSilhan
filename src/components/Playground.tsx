@@ -1,19 +1,20 @@
 import React, { useContext } from 'react';
 import { FeastContext } from '../providers/FeastProvider';
 import Table from './Table';
+import Styles from '../styles/Playground.module.css';
 
 interface Props {
 }
 
-const Playground: React.FC<Props> = () => {
+export const Playground: React.FC<Props> = () => {
   const ctx = useContext(FeastContext);
   
   return (
-    <div>
-      <button onClick={() => ctx.dispatch({ type: 'ADD_TABLE' })}>Add table</button>
+    <div className={Styles["playground"]}>
       {ctx.state.tables.map((table, tableIndex) => {
         return <Table tableIndex={tableIndex} />;
       })}
+      <button className={Styles["add"]} onClick={() => ctx.dispatch({ type: 'ADD_TABLE' })}>+</button>
     </div>
   );
 };
