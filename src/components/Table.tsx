@@ -14,10 +14,10 @@ export const Table: React.FC<Props> = ({ tableIndex }) => {
   return (
     <div className={Styles["table"]}>
       <p className={Styles["sum"]}>{ctx.state.tables[tableIndex].seats.reduce((sum, seat) => sum + seat.items, 0)}</p>
-      <button className={Styles["add"]} onClick={() => {ctx.dispatch({ type: 'ADD_SEAT', tableIndex })}}>+</button>
       {ctx.state.tables[tableIndex].seats.map((seat, seatIndex) => {
         return <Chair tableIndex={tableIndex} seatIndex={seatIndex} />;
       })}
+      <button className={Styles["add"]} onClick={() => {ctx.dispatch({ type: 'ADD_SEAT', tableIndex })}}>+</button>
     </div>
   );
 };
