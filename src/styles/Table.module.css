@@ -1,0 +1,27 @@
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    gap: .5em;
+    padding: .5em .5em .5em 72px;
+    position: relative;
+    min-height: 72px;
+    flex-wrap: wrap;
+}
+.add {
+    background-color: lightgreen;
+    color: black;
+    width:48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    padding: .5em;
+    cursor: pointer;
+}
+.sum {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

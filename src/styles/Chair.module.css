@@ -1,0 +1,11 @@
+.chair {
+    width: 64px;
+    height: 64px;
+    border: 1px solid gray;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3em;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.playground {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    background-color: beige;
+    color: black;
+    gap: 1em;
+    padding: 1em;
+}
+.add {
+    background-color: lightgreen;
+    color: black;
+    width:48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    padding: .5em;
+    cursor: pointer;
+}
