@@ -6,7 +6,6 @@ import Styles from '../styles/Chair.module.css';
 interface Props {
   tableIndex: number;
   seatIndex: number;
-
 }
 
 const Chair: React.FC<Props> = ({ tableIndex, seatIndex }) => {

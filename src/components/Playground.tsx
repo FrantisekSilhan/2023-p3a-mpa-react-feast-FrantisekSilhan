@@ -11,7 +11,7 @@ export const Playground: React.FC<Props> = () => {
   
   return (
     <div className={Styles["playground"]}>
-      {ctx.state.tables.map((table, tableIndex) => {
+      {ctx.state.tables.map((_, tableIndex) => {
         return <Table tableIndex={tableIndex} />;
       })}
       <button className={Styles["add"]} onClick={() => ctx.dispatch({ type: 'ADD_TABLE' })}>+</button>
